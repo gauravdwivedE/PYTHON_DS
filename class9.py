@@ -1,4 +1,8 @@
 #guess the number -- Game
+#stone paper scissors game
+#functions
+
+
 '''
 import random as r
 
@@ -16,7 +20,7 @@ while True:
     else:
         print("Go little upper")
 
-'''
+
 
 # stone paper scissors game
 import random
@@ -60,3 +64,19 @@ while True:
 
 print("Your's point = ", u_point)
 print("System's point = ", s_point)
+
+'''
+
+def simple ():
+    print("Simple function")
+
+def returnFunc ():
+    return 300
+
+def argsFunc(a,b):
+    print(a,b)
+
+
+simple()
+print(returnFunc())
+argsFunc(10,30)
