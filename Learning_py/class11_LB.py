@@ -53,3 +53,37 @@ while(str < end):
     end -= 1 
 
 print("Reversed list = " ,list)
+
+
+#linear search
+# list = [1,2,3,4,5,6,7,8,9,10]
+# elem = int(input("Enter elem that you want to search "))
+
+# for item in list:
+#     if(elem == item):
+#         print("--- Found ---")
+#         break;
+
+#binary search
+list = [10,20,30,40,50,60,70,80,90,100]
+
+index = -1
+elem = 0
+
+str = 0
+end = len(list) - 1
+
+while(str <= end):
+    mid = str+end // 2
+    if(list[mid] == elem):
+        index = mid
+        break
+    elif(elem > list[mid]):
+       str = mid +1
+    else: 
+        end = mid - 1 
+       
+if(index >=0 ):
+    print("Found at ", index)
+else:
+    print("Not found")
