@@ -87,3 +87,17 @@ if(index >=0 ):
     print("Found at ", index)
 else:
     print("Not found")
+
+
+
+#bubble sort
+
+list = [110,120,100,410,150,650,170,850,190,60]
+
+for i in range(len(list) -1):
+    for j in range(i, len(list)):
+        if(list[i] > list[j]):
+            temp = list[i]
+            list[i] = list[j]
+            list[j] = temp
+print(list)
