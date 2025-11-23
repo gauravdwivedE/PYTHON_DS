@@ -112,3 +112,4 @@ for i in range(len(list)-1):
     list[i],list[small] = list[small],list[i]     
 
 print(list)
+
