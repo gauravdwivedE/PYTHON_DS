@@ -91,7 +91,6 @@ else:
 
 
 #bubble sort
-
 list = [110,120,100,410,150,650,170,850,190,60]
 
 for i in range(len(list) -1):
@@ -100,4 +99,16 @@ for i in range(len(list) -1):
             temp = list[i]
             list[i] = list[j]
             list[j] = temp
+print(list)
+
+#selection short
+list = [110,120,100,410,150,650,170,850,190,60]
+
+for i in range(len(list)-1):
+    small = i
+    for j in range(i+1,len(list)):
+        if(list[small] > list[j]):
+            small = j
+    list[i],list[small] = list[small],list[i]     
+
 print(list)
