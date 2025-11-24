@@ -31,3 +31,4 @@ print(set.intersection(set2)) #similar values
 print(set.difference(set2)) # removes similar values from set 1 and gives it
 set.discard(10) #removes 10 from set one and returns none
 print(set)
+
