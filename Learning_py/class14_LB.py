@@ -1,6 +1,7 @@
 # 1.count the frequency of each number given in list
 #leet code 771 (did in leetoce)
 #leetcode 1832 (did in leetcode)
+#leetcode 2351 (did in leetcode)
 
 #Solution 1 
 list = [1,1,1,2,2,2,2,3,5,5,5,6,6,6,1,1,2,3,5,6,6,7,8,9,1,2,3,4,5]
@@ -40,3 +41,15 @@ print("Solution -2 ", dic)
             return True
         else:
             return False'''
+
+#leetcode 2351
+'''
+class Solution(object):
+    def repeatedCharacter(self, s):
+        dic = {}
+        for i in s:
+            if(dic.get(i)):
+                return i
+            else:
+                dic[i] = 1
+'''
