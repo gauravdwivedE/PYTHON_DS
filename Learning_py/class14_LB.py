@@ -2,6 +2,7 @@
 #leet code 771 (did in leetoce)
 #leetcode 1832 (did in leetcode)
 #leetcode 2351 (did in leetcode)
+#leetcode 1748 (did in leetcode)
 
 #Solution 1 
 list = [1,1,1,2,2,2,2,3,5,5,5,6,6,6,1,1,2,3,5,6,6,7,8,9,1,2,3,4,5]
@@ -52,4 +53,25 @@ class Solution(object):
                 return i
             else:
                 dic[i] = 1
+'''
+
+#leetcode 1748
+'''
+class Solution(object):
+    def sumOfUnique(self, nums):
+        dec = {}
+        for item in nums:
+            if(item in dec.keys()):
+                dec[item] +=1
+            else:
+                dec[item] = 1
+        
+        sum = 0
+        print(dec)
+        for i in dec:
+            if(dec.get(i) == 1):
+                sum += i
+        
+        return sum
+
 '''
