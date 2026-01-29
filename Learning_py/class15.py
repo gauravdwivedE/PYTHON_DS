@@ -1,6 +1,9 @@
 '''
 Lambda function 
 map, filter, zip
+
+list/set/dic comprehension in python
+
 '''
 
 #creating a lamda function
@@ -30,3 +33,27 @@ ages = [20, 34, 12, 23, 9]
 comb = list(zip(names, marks, ages))
 
 print(comb)
+
+#list comprehension. -> want to store count greater than 10 (even we can do this tast using filter
+#but still for some cases we should know about it)
+
+chairsCount = [1,2,3,4,5,6,3,4,56,54,5,4,34,64]
+
+newChairsCount = [i for i in chairsCount if i > 10]
+print(newChairsCount)
+
+#stack comprehension. -> want to store count greater than 10 (even we can do this tast using filter
+#but still for some cases we should know about it)
+
+chairsCount = {1,2,3,4,5,6,3,4,56,56,5,4,34,64}
+
+newChairsCount = {i for i in chairsCount if i > 10}
+print(newChairsCount)
+
+
+
+#dic comprehension.
+chairsCount = {1,2,3,4,5,6,3,4,56,56,5,4,34,64}
+
+newChairsCount = {i:i*10 for i in chairsCount}
+print(newChairsCount)
