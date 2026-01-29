@@ -28,3 +28,5 @@ print("Method 2 ")
 #2
 for i in dic:
     print(dic[i])
+
+
