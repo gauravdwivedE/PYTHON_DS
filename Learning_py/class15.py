@@ -1,9 +1,9 @@
 '''
 Lambda function 
 map, filter, zip
-
 list/set/dic comprehension in python
-
+generator comprehension
+Decorator
 '''
 
 #creating a lamda function
@@ -57,3 +57,27 @@ chairsCount = {1,2,3,4,5,6,3,4,56,56,5,4,34,64}
 
 newChairsCount = {i:i*10 for i in chairsCount}
 print(newChairsCount)
+
+
+#generator
+
+
+#Decorator
+
+def test_decorator(func):
+    def wrapper(a,b): # getting args from decorator
+        print("I will run defore sum()");
+        func(a,b) #running sum which is stored in func
+        print("I will run after sum()");
+    return wrapper # calling wrapper
+        
+    
+
+
+
+
+@test_decorator
+def sum(a,b):
+    print(a+b);
+
+sum(10,30)
