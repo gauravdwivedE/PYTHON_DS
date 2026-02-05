@@ -1,0 +1,29 @@
+{
+    "books": [
+        {
+            "id": "B-M4J34",
+            "name": "rr",
+            "author": "tt",
+            "stock": 23,
+            "available_stock": 23,
+            "created_at": "04-02-2026 09:58:50"
+        },
+        {
+            "id": "B-111V2",
+            "name": "rrrrrrrr",
+            "author": "tttt",
+            "stock": 45,
+            "available_stock": 45,
+            "created_at": "04-02-2026 10:03:33"
+        },
+        {
+            "id": "B-Y7DUT",
+            "name": "fghgfhgfhf",
+            "author": "fhgdghfg",
+            "stock": 55,
+            "available_stock": 55,
+            "created_at": "04-02-2026 10:04:03"
+        }
+    ],
+    "member": []
+}
