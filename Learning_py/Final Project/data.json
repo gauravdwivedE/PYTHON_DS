@@ -1,29 +1,27 @@
 {
     "books": [
         {
-            "id": "B-M4J34",
-            "name": "rr",
-            "author": "tt",
-            "stock": 23,
-            "available_stock": 23,
-            "created_at": "04-02-2026 09:58:50"
-        },
-        {
-            "id": "B-111V2",
-            "name": "rrrrrrrr",
-            "author": "tttt",
-            "stock": 45,
-            "available_stock": 45,
-            "created_at": "04-02-2026 10:03:33"
-        },
-        {
-            "id": "B-Y7DUT",
-            "name": "fghgfhgfhf",
-            "author": "fhgdghfg",
-            "stock": 55,
-            "available_stock": 55,
-            "created_at": "04-02-2026 10:04:03"
+            "id": "B-9YZPW",
+            "name": "c++",
+            "author": "gaurav",
+            "stock": 8,
+            "available_stock": 7,
+            "created_at": "08-02-2026 09:51:39"
         }
     ],
-    "member": []
+    "members": [
+        {
+            "id": "M-LRYOZ",
+            "name": "santosh",
+            "email": "gauravdwivedi479@gmail.com",
+            "borrowed_books": [
+                {
+                    "id": "B-9YZPW",
+                    "name": "c++",
+                    "borrowed_date": "08-02-2026 09:53:45"
+                }
+            ],
+            "created_at": "08-02-2026 09:51:56"
+        }
+    ]
 }
